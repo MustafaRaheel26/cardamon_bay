@@ -40,27 +40,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // SCROLL ANIMATION FOR ABOUT SECTION
-const aboutImage = document.querySelector('.about-image img');
+const aboutImage = document.querySelector('.about-image');
 const aboutContent = document.querySelector('.about-content');
-
-// Remove initial opacity/transform to fix image display
-aboutImage.style.opacity = '1';
-aboutImage.style.transform = 'translateX(0)';
-aboutContent.style.opacity = '1';
-aboutContent.style.transform = 'translateX(0)';
-
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-  const aboutSection = document.querySelector('.about');
-  if (!aboutSection) return;
-  
-  const aboutTop = aboutSection.getBoundingClientRect().top;
-
-  if (aboutTop < windowHeight - 100) {
-    aboutImage.classList.add('animated');
-    aboutContent.classList.add('animated');
-  }
-}
 
 // Use Intersection Observer for better performance
 const aboutObserverOptions = {
@@ -71,8 +52,8 @@ const aboutObserverOptions = {
 const aboutObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      aboutImage.classList.add('animated');
-      aboutContent.classList.add('animated');
+      aboutImage.classList.add('animate');
+      aboutContent.classList.add('animate');
       aboutObserver.unobserve(entry.target);
     }
   });
@@ -84,7 +65,23 @@ if (aboutSection) {
   aboutObserver.observe(aboutSection);
 }
 
-// Initial check on page load
-document.addEventListener('DOMContentLoaded', () => {
-  revealOnScroll();
-});
+// Fallback for browsers that don't support Intersection Observer
+if (!('IntersectionObserver' in window)) {
+  function checkScroll() {
+    const windowHeight = window.innerHeight;
+    const aboutSection = document.querySelector('.about');
+    if (!aboutSection) return;
+    
+    const aboutTop = aboutSection.getBoundingClientRect().top;
+
+    if (aboutTop < windowHeight - 100) {
+      aboutImage.classList.add('animate');
+      aboutContent.classList.add('animate');
+      window.removeEventListener('scroll', checkScroll);
+    }
+  }
+  
+  window.addEventListener('scroll', checkScroll);
+  // Check on page load
+  document.addEventListener('DOMContentLoaded', checkScroll);
+}
