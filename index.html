@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cardamon Bay Restaurant</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cardamon Bay Restaurant</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/CARDAMON BAY LOGO_favicon.jpg" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/CARDAMON BAY LOGO_favicon.jpg"
+    />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="assets/images/CARDAMON_BAY_LOGO.png"
+            alt="Cardamon Bay Logo"
+          />
+        </div>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="assets/images/CARDAMON_BAY_LOGO.png" alt="Cardamon Bay Logo">
+        <div
+          class="hamburger"
+          aria-label="Open menu"
+          role="button"
+          tabindex="0"
+        >
+          <span></span><span></span><span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#reviews">REVIEWS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <img
+        src="assets/images/Home page-min.jpeg"
+        alt="Coming Soon"
+        class="hero-image"
+      />
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <!-- Left Image -->
+        <div class="about-image">
+          <img src="assets/images/Breakfast-min.jpg" alt="About Us" />
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+          <h2>ABOUT US</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <a href="#gallery" class="about-btn">EXPLORE</a>
+        </div>
       </div>
+    </section>
 
-      <div class="hamburger" aria-label="Open menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
+    <section id="menu"></section>
+    <section id="gallery"></section>
+    <section id="reviews"></section>
+    <section id="contact"></section>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          Email: <a href="mailto:info@cardamon.co.uk">info@cardamon.co.uk</a>
+        </p>
+        <p>© 2025 Cardamon Bay Restaurant UK. All rights reserved.</p>
       </div>
+    </footer>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#menu">MENU</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
-        <li><a href="#reviews">REVIEWS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <!-- kept as img for now; you can replace with <picture> later -->
-    <img src="assets/images/Home page-min.jpeg" alt="Coming Soon" class="hero-image">
-  </section>
-
-  <!-- placeholders -->
-  <section id="about"></section>
-  <section id="menu"></section>
-  <section id="gallery"></section>
-  <section id="reviews"></section>
-  <section id="contact"></section>
-
-  <footer>
-    <div class="footer-content">
-      <p>Email: <a href="mailto:info@cardamon.co.uk">info@cardamon.co.uk</a></p>
-      <p>© 2025 Cardamon Bay Restaurant UK. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="./scripts/script.js"></script>
-</body>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
