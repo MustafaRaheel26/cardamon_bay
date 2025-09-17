@@ -996,6 +996,29 @@ footer p {
   color: #e1ab5e;
 }
 
+/* Custom Alert Box */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #3c2c1c;
+  color: #e1ab5e;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+}
+.custom-alert.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
   .contact-container {
