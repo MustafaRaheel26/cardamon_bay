@@ -19,7 +19,10 @@
     />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -56,9 +59,19 @@
 
     <!-- HERO -->
     <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Welcome to Cardamon Bay</h1>
+          <p>Authentic cuisine in the heart of Witham</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="hero-btn">View Menu</a>
+            <a href="#contact" class="hero-btn outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
       <img
-        src="assets/images/Home page-min.jpeg"
-        alt="Coming Soon"
+        src="./assets/images/Home page-min.jpg"
+        alt="Restaurant Interior"
         class="hero-image"
       />
     </section>
@@ -75,30 +88,788 @@
         <div class="about-content">
           <h2>ABOUT US</h2>
           <p>
-            Welcome to Cardamon Bay Restaurant and Lounge in Rivenhall, Witham, CM8 3HB, the perfect destination for a delightful dining experience. Our elegant restaurant is designed to make your moments truly memorable.
+            Welcome to Cardamon Bay Restaurant and Lounge in Rivenhall, Witham,
+            CM8 3HB, the perfect destination for a delightful dining experience.
+            Our elegant restaurant is designed to make your moments truly
+            memorable.
           </p>
           <p>
-            Every morning from 7 AM to 10 AM, we serve a fresh and delicious breakfast to start your day right. Whether you’re here for a relaxing lunch or an enjoyable evening with family and friends, Cardamon Bay Restaurant and Lounge is the perfect choice.
+            Every morning from 7 AM to 10 AM, we serve a fresh and delicious
+            breakfast to start your day right. Whether you're here for a
+            relaxing lunch or an enjoyable evening with family and friends,
+            Cardamon Bay Restaurant and Lounge is the perfect choice.
           </p>
           <a href="#gallery" class="about-btn">EXPLORE</a>
         </div>
       </div>
     </section>
 
-    <section id="menu"></section>
-    <section id="gallery"></section>
-    <section id="reviews"></section>
-    <section id="contact"></section>
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu">
+      <div class="menu-header">
+        <h2>Our Menu</h2>
+        <p>
+          Discover our exquisite selection of authentic dishes prepared with the
+          finest ingredients
+        </p>
+      </div>
+
+      <div class="menu-categories">
+        <button class="category-btn active" data-category="all">
+          All Menu
+        </button>
+        <button class="category-btn" data-category="starters">Starters</button>
+        <button class="category-btn" data-category="pizza">Pizza</button>
+        <button class="category-btn" data-category="burgers">Burgers</button>
+        <button class="category-btn" data-category="grills">Grills</button>
+        <button class="category-btn" data-category="specials">
+          Chef's Specials
+        </button>
+        <button class="category-btn" data-category="tandoori">Tandoori</button>
+        <button class="category-btn" data-category="biryani">Biryani</button>
+        <button class="category-btn" data-category="vegetarian">
+          Vegetarian
+        </button>
+        <button class="category-btn" data-category="sides">Sides</button>
+        <button class="category-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <!-- ================= STARTERS ================= -->
+      <div class="menu-category" data-category="starters">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Prawn (1)-min.jpg"
+              alt="Starters"
+            />
+          </div>
+          <div class="category-title"><h3>STARTERS</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>MIXED STARTER</h4>
+              <p>Chicken/Lamb Kebab/Seek Kebab combination</p>
+            </div>
+            <div class="item-prices"><span>£7.30</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>PRAWN COCKTAIL</h4>
+              <p>Fresh prawns with tangy cocktail sauce</p>
+            </div>
+            <div class="item-prices"><span>£3.25</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>DALL SOUP</h4>
+              <p>Traditional lentil soup with spices</p>
+            </div>
+            <div class="item-prices"><span>£2.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>SAMOSAS (Meat/Vegetable)</h4>
+              <p>Crispy pastry with savory filling</p>
+            </div>
+            <div class="item-prices"><span>£4.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>KING PRAWN BUTTERFLY</h4>
+              <p>Butterflied prawns in light batter</p>
+            </div>
+            <div class="item-prices"><span>£7.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>KING PRAWN PUREE</h4>
+              <p>King prawns served with puree bread</p>
+            </div>
+            <div class="item-prices"><span>£7.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>PRAWN PUREE</h4>
+              <p>Prawns served with puree bread</p>
+            </div>
+            <div class="item-prices"><span>£7.10</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>SHEEK KEBAB</h4>
+              <p>Minced lamb kebab with herbs and spices</p>
+            </div>
+            <div class="item-prices"><span>£5.10</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>SHAMI KEBAB</h4>
+              <p>Traditional minced meat kebab</p>
+            </div>
+            <div class="item-prices"><span>£5.10</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>TANDOORI KING PRAWN</h4>
+              <p>King prawns marinated and grilled</p>
+            </div>
+            <div class="item-prices"><span>£7.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>TANDOORI CHICKEN (On the Bone)</h4>
+              <p>Marinated chicken grilled in tandoor</p>
+            </div>
+            <div class="item-prices"><span>£5.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>CHICKEN/LAMB TIKKA</h4>
+              <p>Succulent marinated pieces</p>
+            </div>
+            <div class="item-prices"><span>£5.10</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>GARLIC MUSHROOMS</h4>
+              <p>Mushrooms sautéed with garlic</p>
+            </div>
+            <div class="item-prices"><span>£5.10</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= PIZZA ================= -->
+      <div class="menu-category" data-category="pizza">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Pizza-min.jpg"
+              alt="Pizza"
+            />
+          </div>
+          <div class="category-title"><h3>PIZZA</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>MARGHERITA (V)</h4>
+              <p>Mozzarella cheese & tomato sauce</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £5.99</span><span>12" £9.99</span><span>15" £11.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>GRASS ROOTS PIZZA</h4>
+              <p>Mushrooms, onions, peppers, sweetcorn</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £7.99</span><span>12" £11.99</span
+              ><span>15" £13.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>VEGETARIAN DELUXE (V)</h4>
+              <p>Jalapeño, mushrooms, chillies, sweetcorn</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £7.99</span><span>12" £11.99</span
+              ><span>15" £13.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>MAMA'S MORRIS SPECIAL</h4>
+              <p>Chicken/Meat, Jalapeño, green chillies</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £7.99</span><span>12" £11.99</span
+              ><span>15" £13.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>FAT JOE'S SPECIAL</h4>
+              <p>Seekh kebab, peppers, jalapeño, cheese</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £7.99</span><span>12" £11.99</span
+              ><span>15" £13.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>GRILLED CHICKEN PIZZA</h4>
+              <p>Grilled chicken, peppers, sweetcorn</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £7.99</span><span>12" £11.99</span
+              ><span>15" £13.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>THE MO-SALAH PIZZA</h4>
+              <p>Chicken tikka, onion, fresh tomato</p>
+            </div>
+            <div class="item-prices">
+              <span>9" £7.99</span><span>12" £11.99</span
+              ><span>15" £13.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= BURGERS ================= -->
+      <div class="menu-category" data-category="burgers">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Burger-min.jpeg"
+              alt="Burgers"
+            />
+          </div>
+          <div class="category-title"><h3>BURGERS</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info"><h4>SMASH BURGER</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>GRILLED CHICKEN BURGER</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>QUARTER POUNDER</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>CHEESE BURGER</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>BUTTERMILK CHICKEN BURGER</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>ALGERIAN CHICKEN BURGER</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= GRILLS ================= -->
+      <div class="menu-category" data-category="grills">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Grill Chicken-min.jpg"
+              alt="Grills"
+            />
+          </div>
+          <div class="category-title"><h3>GRILLS</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info"><h4>1/4 GRILL CHICKEN</h4></div>
+            <div class="item-prices"><span>£4.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>HALF GRILL CHICKEN</h4></div>
+            <div class="item-prices"><span>£7.49</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>WHOLE CHICKEN MEAL</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>LAMB CHOPS (4 pcs)</h4></div>
+            <div class="item-prices"><span>£10.99</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>GRILLED WINGS (4 pcs)</h4></div>
+            <div class="item-prices"><span>£4.99</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= CHEF'S SPECIALS ================= -->
+      <div class="menu-category" data-category="specials">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Butter CHicken.jpg"
+              alt="Chef's Specials"
+            />
+          </div>
+          <div class="category-title"><h3>CHEF'S SPECIALS</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>REZELLA CHICKEN/LAMB</h4>
+              <p>Medium or hot, marinated in spices</p>
+            </div>
+            <div class="item-prices"><span>£9.75</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>CHICKEN/LAMB PASSANDA</h4>
+              <p>Cooked with yoghurt, cream, almonds</p>
+            </div>
+            <div class="item-prices"><span>£9.75</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>CHICKEN/LAMB JALFREZI</h4>
+              <p>Hot with green chilli & ginger</p>
+            </div>
+            <div class="item-prices"><span>£9.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>BUTTER CHICKEN/LAMB</h4>
+              <p>Mild dish in rich cream & butter sauce</p>
+            </div>
+            <div class="item-prices"><span>£9.95</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= TANDOORI ================= -->
+      <div class="menu-category" data-category="tandoori">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Tandoori Chicken (1)-min.jpg"
+              alt="Tandoori"
+            />
+          </div>
+          <div class="category-title"><h3>TANDOORI</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info"><h4>CHICKEN OR LAMB TIKKA</h4></div>
+            <div class="item-prices"><span>£9.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>TANDOORI CHICKEN</h4>
+              <p>Half spring chicken marinated</p>
+            </div>
+            <div class="item-prices"><span>£9.75</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>CHICKEN/LAMB SHASLICK</h4></div>
+            <div class="item-prices"><span>£11.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>TANDOORI KING PRAWN</h4></div>
+            <div class="item-prices"><span>£15.25</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= BIRYANI ================= -->
+      <div class="menu-category" data-category="biryani">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Biryani Caramon Bay.jpg"
+              alt="Biryani"
+            />
+          </div>
+          <div class="category-title"><h3>BIRYANI</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info"><h4>CHICKEN/LAMB BIRYANI</h4></div>
+            <div class="item-prices"><span>£10.25</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>KING PRAWN BIRYANI</h4></div>
+            <div class="item-prices"><span>£15.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>PRAWN BIRYANI</h4></div>
+            <div class="item-prices"><span>£12.10</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>VEGETABLE BIRYANI</h4></div>
+            <div class="item-prices"><span>£10.75</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>SPECIAL BIRYANI</h4></div>
+            <div class="item-prices"><span>£12.55</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= VEGETARIAN ================= -->
+      <div class="menu-category" data-category="vegetarian">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Curry (1)-min.jpg"
+              alt="Vegetarian"
+            />
+          </div>
+          <div class="category-title"><h3>VEGETARIAN</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info"><h4>MIX VEGETABLE CURRY</h4></div>
+            <div class="item-prices"><span>£8.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>BOMBAY ALOO</h4></div>
+            <div class="item-prices"><span>£7.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>CHANA MASALA</h4></div>
+            <div class="item-prices"><span>£7.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>BHINDI BHAJI</h4></div>
+            <div class="item-prices"><span>£8.50</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= SIDES ================= -->
+      <div class="menu-category" data-category="sides">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Naan-min.jpg"
+              alt="Sides"
+            />
+          </div>
+          <div class="category-title"><h3>SIDES</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info"><h4>NAAN</h4></div>
+            <div class="item-prices"><span>£2.10</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>GARLIC NAAN</h4></div>
+            <div class="item-prices"><span>£2.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>CHAPATI</h4></div>
+            <div class="item-prices"><span>£1.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>PAPADUM</h4></div>
+            <div class="item-prices"><span>£1.50</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= DRINKS ================= -->
+      <div class="menu-category" data-category="drinks">
+        <div class="category-header">
+          <div class="category-image">
+            <img
+              src="./assets/images/Drink-min.jpg"
+              alt="Drinks"
+            />
+          </div>
+          <div class="category-title"><h3>DRINKS</h3></div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>SOFT DRINKS (Coke, Fanta, Sprite)</h4>
+            </div>
+            <div class="item-prices"><span>£1.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>MANGO LASSI</h4></div>
+            <div class="item-prices"><span>£2.95</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info">
+              <h4>MILKSHAKES</h4>
+              <p>Chocolate, Strawberry, Vanilla</p>
+            </div>
+            <div class="item-prices"><span>£3.50</span></div>
+          </div>
+          <div class="menu-item">
+            <div class="item-info"><h4>MINERAL WATER</h4></div>
+            <div class="item-prices"><span>£1.00</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-download">
+        <a href="./assets/images/Cardamon_Bay_Menu.pdf" class="download-btn" download="Cardamon_Bay_Menu.pdf">
+          <i class="fas fa-download"></i> Download Full Menu
+        </a>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+      <div class="gallery-header">
+        <h2>Our Gallery</h2>
+        <p>Take a visual journey through our restaurant and dishes</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img
+            src="./assets/images/1.jpeg"
+            alt="Restaurant Interior"
+            data-index="1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/2.jpeg" alt="Dining Area" data-index="2" />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="./assets/images/3.jpeg"
+            alt="Food Presentation"
+            data-index="3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/4.jpeg" alt="Special Dish" data-index="4" />
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/5.jpeg" alt="Dessert" data-index="5" />
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/6.jpeg" alt="Drinks" data-index="6" />
+        </div>
+      </div>
+
+      <!-- Gallery Modal -->
+      <div class="gallery-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image" />
+        <div class="modal-caption"></div>
+        <a class="modal-prev">&#10094;</a>
+        <a class="modal-next">&#10095;</a>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews" class="reviews">
+      <div class="reviews-header">
+        <h2>Customer Reviews</h2>
+        <p>What our valued customers say about us</p>
+      </div>
+
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="review-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The food was absolutely incredible! Best Indian cuisine I've had
+              in years. The flavors were authentic and the service was
+              exceptional."
+            </p>
+            <div class="reviewer">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="John Smith"
+              />
+              <div class="reviewer-info">
+                <h4>John Smith</h4>
+                <p>Regular Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="review-text">
+              "Amazing atmosphere and delicious food. The staff went above and
+              beyond to make our anniversary dinner special. Highly
+              recommended!"
+            </p>
+            <div class="reviewer">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Sarah Johnson"
+              />
+              <div class="reviewer-info">
+                <h4>Sarah Johnson</h4>
+                <p>Food Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Every dish we tried was bursting with flavor. The presentation
+              was beautiful and the portions were generous. Will definitely be
+              back!"
+            </p>
+            <div class="reviewer">
+              <img
+                src="https://randomuser.me/api/portraits/men/67.jpg"
+                alt="Michael Brown"
+              />
+              <div class="reviewer-info">
+                <h4>Michael Brown</h4>
+                <p>Local Food Critic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="contact-header">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Get in touch with us!</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Address</h3>
+              <p>Rivenhall, Witham, CM8 3HB</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p><a href="tel:01376433273">01376 433273</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:info@cardamon.co.uk">info@cardamon.co.uk</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Opening Hours</h3>
+              <p>Monday - Sunday: 7:00 AM - 10:00 AM</p>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19889.21591611047!2d0.6225!3d51.775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQ2JzMwLjAiTiAwwrAzNycwNi4wIkU!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" />
+              <label for="phone">Phone Number</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-content">
         <div class="footer-section">
           <h3>Contact Info</h3>
           <div class="contact-info">
-            <p><i class="fas fa-phone"></i> <a href="tel:0137604330273">01376 04330273</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:info@cardamon.co.uk">info@cardamon.co.uk</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> Rivenhall, Witham, CM8 3HB</p>
-            <p><i class="fas fa-globe"></i> <a href="https://www.cardamonbay.co.uk" target="_blank">www.cardamonbay.co.uk</a></p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:01376433273">01376 433273</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@cardamon.co.uk">info@cardamon.co.uk</a>
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Rivenhall, Witham, CM8 3HB
+            </p>
+            <p>
+              <i class="fas fa-globe"></i>
+              <a href="https://www.cardamonbay.co.uk" target="_blank"
+                >www.cardamonbay.co.uk</a
+              >
+            </p>
           </div>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -106,7 +877,7 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
-        
+
         <div class="footer-section">
           <h3>Opening Hours</h3>
           <div class="opening-hours">
@@ -114,7 +885,7 @@
             <p><span>7:00 AM - 10:00 AM</span></p>
           </div>
         </div>
-        
+
         <div class="footer-section">
           <h3>Quick Links</h3>
           <p><a href="#home">Home</a></p>
@@ -124,7 +895,7 @@
           <p><a href="#contact">Contact</a></p>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>© 2025 Cardamon Bay Restaurant UK. All rights reserved.</p>
       </div>
